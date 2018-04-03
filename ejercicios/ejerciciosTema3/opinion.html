@@ -1,0 +1,125 @@
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>Opinión</title>
+    <style>
+      body {
+        width: 80%;   
+        margin: 0 auto;
+        font: 10pt/1.5em Helvetica,"Helvetica neue", Arial, sans-serif;  
+        background: #eee9df url(../images/tile1.png) center top repeat;
+      }
+      h1 {
+        font: 24pt Helvetica,"Helvetica neue", Arial, sans-serif;   
+        text-transform: uppercase;
+        color: #e5b7ad;   
+        padding-top: 30px ;
+      }
+      
+      
+      
+      form div
+      {
+        padding:10px;
+      }
+      
+      form div > label
+      {
+        display: block;
+        width: 100%;
+      }
+</style>
+   
+  </head>
+  <body>
+    <header>
+      <h1>TU OPINIÓN CUENTA</h1>
+    </header>
+    <section>
+      <h3>Rellena con sinceridad</h3>
+    	<form method="get" action="https://rawgit.com/cancerbero01/disenoWeb/master/ejerciciosTema3/reOpinion.html">
+				<fieldset>
+          <legend>Tus datos de contacto</legend>
+        	<div>
+            <label for="nombre">¿Cuál es tu nombre?</label>
+            <input type="text" name="nombre" id="nombre" required autofocus>
+          </div>
+          <div>
+            <label for="email">¿Cuál es tu dirección de correo electrónico?</label>
+            <input type="email" name="email" id="email" required>
+          </div>
+          <div>
+            <label for="edad1">Indica la edad</label>
+            <input type="number" name="edad1" id="edad1" min="0" required>
+          </div>
+          <div>
+            <label for="edad2">Indica la edad</label>
+            <input type="range" name="edad2" id="edad2" min="0" step="1" required>
+          </div>
+          <div>
+            <label for="tel">Indica teléfono</label>
+            <input type="tel" name="tel" id="tel" required>
+          </div>
+        
+        </fieldset>
+
+        <fieldset>
+          <legend>Elije tu envío</legend>
+        	<div>
+            <p>¿Qué deseas que te envíe?</p>
+            <p>
+              <input type="radio" name="deseo" value="rico" id="rico">
+            	<label for="rico">Ser rico</label><br>
+              <input type="radio" name="deseo" value="famoso" id="famoso">
+            	<label for="famoso">Ser famoso</label><br>
+              <input type="radio" name="deseo" value="inteligente" id="inteligente">
+            	<label for="inteligente">Ser aún más inteligente</label><br>
+              <input type="radio" name="deseo" value="otro" id="otro">
+            	<label for="otro">Otro...</label><br>
+            </p>
+          </div>
+   				<div>
+            <p>¿Otra cosa?</p>
+            <p>
+              <input type="checkbox" name="belleza" id="belleza">
+            	<label for="belleza">Belleza</label><br>
+              <input type="checkbox" name="habilidad" id="habilidad">
+            	<label for="habilidad">Habilidad</label><br>
+              <input type="checkbox" name="personalidad" id="personalidad">
+            	<label for="personalidad">Personalidad</label><br> 
+            </p>
+          </div>    
+          <div>
+            <p>¿En que grado?</p>
+            <p>
+              <select name="grado" id="grado">
+                <optgroup label="Poco">
+                  <option value="muypoco">Muy poco</option>
+                  <option value="poco">Poco</option>
+                </optgroup>
+                <optgroup label="Mucho">
+                  <option value="alto">Alto</option>
+                  <option value="mucho">Mucho</option>
+                </optgroup>
+              </select> 
+            </p>
+          </div>
+          <div>
+            <label for="cual">Si has elegido "otros", especifica cuál:</label>
+            <textarea name="cual" id="cual"></textarea>
+          </div>
+        </fieldset>
+      
+        <input type="submit" value="Enviar">
+        
+      </form>
+      
+    </section>
+   
+
+   
+  </body>
+</html>
